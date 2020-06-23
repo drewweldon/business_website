@@ -13,9 +13,29 @@ body{
     overflow: hidden;
 }
 
+.button {
+    background-color: green; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
 #main-header{
     background-color: green;
     color: #fff;
+}
+
+#main-header a{
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#main-header a:hover {
+    color: gold;
 }
 
 #navbar{
@@ -24,6 +44,7 @@ body{
 }
 
 #navbar ul{
+    float: right;
     padding: 0;
     list-style: none;
 }
@@ -37,6 +58,12 @@ body{
     text-decoration: none;
     font-size: 18px;
     padding-right: 15px;
+    transition: all 0.3s ease;
+
+}
+
+#navbar a:hover {
+    color: gold;
 }
 
 #showcase{
@@ -44,7 +71,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 200px;
+    min-height: 100px;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -72,13 +99,31 @@ body{
     box-sizing: border-box;
 }
 
-#main-footer{
-    background: #333;
+.main-footer{
+    background :#333;
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
+
+.main-footer a{
+    background-color: #125688;
+    border-radius: 10%;
+    color: white;
+    padding: 6px 10px;
+    font-size: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.main-footer a:hover {
+    color: gold;
+}
+
 
 @media(max-width:600px){
     #main{
