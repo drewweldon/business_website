@@ -2,76 +2,95 @@
 <html>
 <head>
     <title>Well Done Lawns & Landscaping</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
     <header id="main-header">
-        <div class="container">
+        <div class="container">    
             <h4>
-                <i class="fas fa-mobile"></i> 404-580-5800 
-                <i class="fas fa-envelope"></i> welldonelawns@yahoo.com        Well Done Lawns & Landscaping
+                <i style="padding-left: 30px" class="fas fa-mobile"></i> 404-580-5800 
+                <i style="padding-left: 30px" class="fas fa-envelope"></i> welldonelawns@yahoo.com       <span style="padding-left: 30px;">Well Done Lawns & Landscaping</span>
                 <a href="https://www.instagram.com/welldonelawns/"><i class="fab fa-instagram"></i></a>
             </h4>
         </div>
     </header>
 
-    <nav id="navbar">
-        <div class="container">
-            <img src="images/logo.jpg" width="145" style="float:left">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </div>
+    <nav class="navbar navbar-expand-sm bg-light" style="background-color: #333 !important">
+        <img src="/images/logo.jpg" width="145" style="float:left">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="/gallery">Gallery</a></li>
+        </ul>
     </nav>
   
-    <section id="showcase">
+    <section id="showcase" style="background-image:url('/Images/grass.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100px;
+    margin-bottom: 10px;
+    text-align: center;">
         <div class="container">
-            <h1>Contact</h1>
+            <h1 style="color: black;
+            font-size: 50px;
+            line-height: 1.6em;
+            padding-top: 30px;">Contact Us</h1>
         </div>
     </section>
 
-    <form action="process.php" method="POST">
-        <div>
-            <label>First Name</label>
-            <input type="text" name="firstName" placeholder="Enter First Name">
-        </div>
+    <div class="form-group" style="display: inline-flex;">
+        <form action="/lawn-form" method="POST" class="container" style="float: right;">
+            <input type="text" name="firstName" placeholder="First Name" size="50">
             <br>
-        <div>
-            <label>Last Name</label>
-            <input type="text" name="lastName">
-        </div>
             <br>
-        <div>
-            <label>Email</label>
-            <input type="email" name="email">
-        </div>
+            <input type="text" name="lastName" placeholder="Last Name" size="50">
             <br>
-        <div>
-            <label>Phone Number</label>
-            <input type="text" name="Phone Number">
-        </div>
             <br>
-        <div>
-            <label>Message</label>
-            <textarea name="Message"></textarea>
-        </div>
+            <input type="email" name="email" placeholder="Email" size="50">
             <br>
-        
             <br>
-        <input type="submit" name="Submit" value="Submit">
-    </form>
+            <input type="text" name="Phone Number" placeholder="Phone Number" size="50">
+            <br>
+            <br>
+            <input type="text" name="Street Address" placeholder="Street Address" size="50">
+            <br>
+            <br>
+            <p>What services are you interested in?</p>
+                <label style="display: block;"><input type="checkbox" name="Services" value="Cut"/> Lawn Care</label>
+                <label style="display: block;"><input type="checkbox" name="Services" value="Landscaping"/> Landscaping</label>
+                <label style="display: block;"><input type="checkbox" name="Services" value="Shrubs"/> Shrub Maintenance</label>
+                <label style="display: block;"><input type="checkbox" name="Services" value="Trees"/> Tree Maintenance</label>
+                <label style="display: block;"><input type="checkbox" name="Services" value="cleanup"/> Clean Up</label>
+                <label style="display: block;"><input type="checkbox" name="Services" value="Sod"/> New Sod Installation</label>
+                <label style="display: block;"><input type="checkbox" name="Services" value="Projects"/> Walls & Pavers</label>
+                <label style="display: block;"><input type="checkbox" name="Services" value="Other"/> Other (Specify in comments below)</label>
+            <br>
+                <textarea style="display: block;" class="form-control" rows="5" id="comment" placeholder="Add comments here..."></textarea>
+            <br>
+            <div class="container">
+                <input type="submit" name="Submit" value="Submit">
+            </div>
+        </form>
+    </div>
 
     <br>
-
-    
-
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
 
-    <footer class="main-footer">
+    <footer class="main-footer text-center" style="position:  absolute;
+    width: 100%;
+    height: 5rem; 
+    background :#333;
+    color: white;
+    text-align: center !important;
+    margin-top: 20px;
+    vertical-align: middle;">
         <p>Copyright &copy; 2020, Well Done Lawns & Landscaping 
             <a href="https://www.instagram.com/welldonelawns/"><i class="fab fa-instagram"></i></a>
         </p>

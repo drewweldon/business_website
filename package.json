@@ -1,0 +1,23 @@
+{
+  "name": "my-website",
+  "version": "1.0.0",
+  "description": "\"My web application\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drewweldon/business_website.git"
+  },
+  "author": "Drew Weldon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drewweldon/business_website/issues"
+  },
+  "homepage": "https://github.com/drewweldon/business_website#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
