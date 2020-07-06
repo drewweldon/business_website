@@ -10,8 +10,8 @@ app.use(bodyParser.json());
 
 // app.use(express.static(__dirname + '/public'));
 
-app.listen(8080, function() {
-    console.log("Server running on port 8080");
+app.listen(5000, function() {
+    console.log("Server running on port 5000");
 });
 
 app.post("/lawn-form", urlencodedParser, function (req, res) {
