@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 // app.use(express.static(__dirname + '/public'));
 
-app.listen(5000, function() {
+app.listen(process.env.PORT || 5000, function() {
     console.log("Server running on port 5000");
 });
 
