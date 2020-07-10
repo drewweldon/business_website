@@ -12,25 +12,17 @@ var x = {
 };
 const client = new Client(x);
 
-client.connect().then(client => {
+var DbUtil = {
 
-}).catch(error => {
-    console.log("something went wrong!!!");
-    console.log(error);
-});
-client.query('SELECT * FROM Customers;', (err, res) => {
-        if (err) {
-            console.log("something went horribly wrong!!!!!");
-        } else {
-            console.log(res.rows[0]);
-        }
-    });
-console.log("Success");
-//client.query('select * from customers');
-//(async () => {
-//  await client.connect()
-//  console.log("I have a successful database connection");
-//  const res = await client.query('SELECT $1::text as message', ['Hello world!'])
-//  console.log(res.rows[0].message) // Hello world!
-//  await client.end()
-//})()
+    addCustomer: function(values) {
+        var sql = 'INSERT INTO Customers(first_name, last_name, email, phone_number, street_address, services, comments) VALUES($1, $2, $3, $4, $5, $6, $7);';
+        client.connect();
+        client.query(sql, values, (err, res) => {
+            if (err) {
+                console.error("Error saving data")
+            }
+            else {
+            }
+        })
+    }
+};
