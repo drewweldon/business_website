@@ -44,34 +44,34 @@ app.get("/gallery", function (req, res) {
 //     res.sendfile("/CSS/style.css");
 // }); 
 
-app.get("/Images/grass.png", function (req, res) {
-    res.sendfile("./Images/grass.png");
+app.get("/img/grass.png", function (req, res) {
+    res.sendfile("./img/grass.png");
 }); 
 
-app.get("/Images/logo.jpg", function (req, res) {
-    res.sendfile("./Images/logo.jpg");
+app.get("/img/logo.jpg", function (req, res) {
+    res.sendfile("./img/logo.jpg");
 }); 
 
-app.get("/Images/wgga.gif", function (req, res) {
-    res.sendfile("./Images/wgga.gif");
+app.get("/img/wgga.gif", function (req, res) {
+    res.sendfile("./img/wgga.gif");
 }); 
 
-app.get("/Images/patio.JPG", function (req, res) {
-    res.sendfile("./Images/patio.JPG");
+app.get("/img/patio.JPG", function (req, res) {
+    res.sendfile("./img/patio.JPG");
 }); 
 
-app.get("/Images/lathambefore.jpg", function (req, res) {
-    res.sendfile("./Images/lathambefore.jpg");
+app.get("/img/lathambefore.jpg", function (req, res) {
+    res.sendfile("./img/lathambefore.jpg");
 }); 
 
-app.get("/Images/lathamafter.jpg", function (req, res) {
-    res.sendfile("./Images/lathamafter.jpg");
+app.get("/img/lathamafter.jpg", function (req, res) {
+    res.sendfile("./img/lathamafter.jpg");
 }); 
 
-app.get("/Images/curb.JPG", function (req, res) {
-    res.sendfile("./Images/curb.JPG");
+app.get("/img/curb.JPG", function (req, res) {
+    res.sendfile("./img/curb.JPG");
 }); 
 
-app.get("/Images/slater.jpg", function (req, res) {
-    res.sendfile("./Images/slater.jpg");
+app.get("/img/slater.jpg", function (req, res) {
+    res.sendfile("./img/slater.jpg");
 }); 
