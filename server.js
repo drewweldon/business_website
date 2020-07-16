@@ -122,3 +122,31 @@ app.get("/img/curb.JPG", function (req, res) {
 app.get("/img/slater.jpg", function (req, res) {
     res.sendfile("./img/slater.jpg");
 }); 
+
+app.get("/img/pano.jpg", function (req, res) {
+    res.sendfile("./img/pano.jpg");
+}); 
+
+app.get("/img/bridge.jpg", function (req, res) {
+    res.sendfile("./img/bridge.jpg");
+}); 
+
+app.get("/img/flower.jpg", function (req, res) {
+    res.sendfile("./img/flower.jpg");
+}); 
+
+app.get("/img/hill.jpg", function (req, res) {
+    res.sendfile("./img/hill.jpg");
+}); 
+
+app.get("/img/DW.jpg", function (req, res) {
+    res.sendfile("./img/DW.JPG");
+}); 
+
+app.get("/img/morin.jpg", function (req, res) {
+    res.sendfile("./img/morin.JPG");
+}); 
+
+app.get("/img/yard.jpg", function (req, res) {
+    res.sendfile("./img/yard.jpg");
+}); 
