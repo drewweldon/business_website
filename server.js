@@ -41,6 +41,8 @@ var DbUtil = {
 
 var Util = {
     convertToPSQL: function(values) {
+        // TODO: find the real soln
+        console.log(values);
         var newStr = '{';
         values.forEach(element => {
             newStr += element + ','
@@ -64,6 +66,7 @@ app.post("/lawn-form", urlencodedParser, function (req, res) {
     values.push(Util.convertToPSQL(req.body['Services']));
     values.push('');
     DbUtil.addCustomer(values);
+    res.sendfile('index.html');
     // res.json({response: 200});
 });
 
